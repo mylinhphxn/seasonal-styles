@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>jQuery Test Page</title>
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <style>
+            div#myDiv{
+                /*
+                background-color:orange;
+                */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>jQuery Test Page</h1>
+        <div id = "myDiv">I'm inside a div with an id of myDiv</div>
+        <script>
+       
+            //document.getElementById("myDiv").innerHTML = "new text";
+
+
+
+            $("document").ready(function(){
+                //$("div#myDiv").css("background-color", "green");
+                //$("div#myDiv").text("text from jQuery");
+                $("div#myDiv").append("appends text from jQuery");
+            });
+
+
+
+        </script>
+    </body>
+
+</html>
