@@ -5,14 +5,11 @@ $("document").ready(function(){
         var season = $(this).attr("href");//contents of href attribute of this element
         alert(season);
 
-        if (season == "Default"){
-            $("#logo").attr("src", "images/four-seasons.gif");
-
-            $("#wear").attr("src", "images/300x400.png");
-
+          if (season == "Default"){
             $("html").css("background-color", "#ccc");
-
-            alert("You clicked on the Default page! Go Somewhere Else!");
+            $("#wear").attr("src", "images/300x400.png");
+            $("#logo").attr("src", "images/four-seasons.gif");
+            $("header h3").text("Default page! Check out the 4 different seasons collections!");
           }
 
           if (season == "Spring"){  
